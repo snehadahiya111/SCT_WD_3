@@ -92,6 +92,7 @@ function nextQuestion() {
 }
 
 function showScore() {
+  questionEl.textContent = ""; 
   optionsEl.innerHTML = "";
   feedbackEl.textContent = "";
   nextBtn.style.display = "none";
@@ -100,5 +101,5 @@ function showScore() {
 
 nextBtn.addEventListener("click", nextQuestion);
 
-// Load first question automatically
+
 loadQuestion();
